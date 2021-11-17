@@ -3,9 +3,22 @@ $primaryColor: rgb(0, 0, 0);
 $secondaryColor: rgba(128, 128, 128, 0.452);
 $closingColor: #19161b;
 
+body {
+  background-color: $secondaryColor;
+}
 header {
   background-color: $myColor;
   padding: 50px;
+
+  .main-header {
+    font-size: 1.7rem;
+    opacity: 22%;
+    font-style: italic;
+    margin-top: -60px;
+    margin-left: 3vw;
+    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+  }
 }
 
 h1 {
@@ -38,7 +51,7 @@ p {
       transition: 0.2s ease-in;
 
       &:hover {
-        border-radius: 6px;
+        border-radius: 10px;
         padding: 1rem;
       }
     }
@@ -54,6 +67,7 @@ p {
   #{&}-heading {
     background-color: $secondaryColor;
     padding: 1rem;
+    margin-bottom: 0;
   }
   h1,
   p {
@@ -64,10 +78,10 @@ p {
     background-color: $secondaryColor;
     border-radius: 25px;
     padding: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     transition: all 0.3s ease-in;
     &:hover {
-      border-radius: 6px;
+      border-radius: 10px;
       padding: 1rem;
     }
   }
@@ -76,20 +90,21 @@ p {
     background-color: $closingColor;
     color: #fff;
     padding: 1rem;
+    border-radius: 4px;
     text-align: center;
-    text-align: right;
     font-size: 12px;
 
     a {
       color: #fff;
       letter-spacing: 0.1px;
-      opacity: 0.8;
+      opacity: 0.75;
       font-size: 1rem;
       text-decoration: none;
-      transition: 0.3s;
+      transition: 0.25s;
 
       &:hover {
         opacity: 1;
+        color: yellow;
       }
     }
   }
