@@ -11,13 +11,15 @@ header {
   padding: 50px;
 
   .main-header {
-    font-size: 1.7rem;
-    opacity: 22%;
+    font-size: 3rem;
+    opacity: 12%;
     font-style: italic;
-    margin-top: -60px;
-    margin-left: 3vw;
+    margin-top: -55px;
     letter-spacing: 2px;
     margin-bottom: 2.5rem;
+  }
+  .main-subHeader {
+    text-decoration: underline;
   }
 }
 
@@ -52,7 +54,7 @@ p {
 
       &:hover {
         border-radius: 10px;
-        padding: 1rem;
+        padding: 1.5rem;
       }
     }
 
@@ -77,12 +79,12 @@ p {
   & &-paragrap {
     background-color: $secondaryColor;
     border-radius: 25px;
-    padding: 0.5rem;
+    padding: 1rem;
     margin-bottom: 2rem;
     transition: all 0.3s ease-in;
     &:hover {
       border-radius: 10px;
-      padding: 1rem;
+      padding: 0.5rem;
     }
   }
 

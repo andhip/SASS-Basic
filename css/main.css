@@ -8,13 +8,16 @@ header {
 }
 
 header .main-header {
-  font-size: 1.7rem;
-  opacity: 22%;
+  font-size: 3rem;
+  opacity: 12%;
   font-style: italic;
-  margin-top: -60px;
-  margin-left: 3vw;
+  margin-top: -55px;
   letter-spacing: 2px;
   margin-bottom: 2.5rem;
+}
+
+header .main-subHeader {
+  text-decoration: underline;
 }
 
 h1 {
@@ -54,7 +57,7 @@ p {
 
 .main .main-heading .main-paragraf:hover {
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .main .main-heading p {
@@ -75,7 +78,7 @@ p {
 .footer .footer-paragrap {
   background-color: rgba(128, 128, 128, 0.452);
   border-radius: 25px;
-  padding: 0.5rem;
+  padding: 1rem;
   margin-bottom: 2rem;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
@@ -83,7 +86,7 @@ p {
 
 .footer .footer-paragrap:hover {
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .footer .footer-closing {
