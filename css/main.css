@@ -1,0 +1,82 @@
+header {
+  background-color: rgba(250, 128, 114, 0.911);
+  padding: 50px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  color: black;
+  font-size: 2vw;
+}
+
+.main {
+  background-color: rgba(128, 128, 128, 0.452);
+}
+
+.container .main {
+  background-color: yellow;
+}
+
+.main .main-heading {
+  font-size: 2rem;
+  padding: 15px;
+}
+
+.main .main-heading h1 {
+  padding: 1rem;
+}
+
+.main .main-heading .main-paragraf {
+  background-color: rgba(128, 128, 128, 0.37);
+  padding: 0.5rem;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.main .main-heading .main-paragraf:hover {
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.main .main-heading p {
+  color: black;
+}
+
+.footer .footer-heading {
+  background-color: rgba(128, 128, 128, 0.452);
+  padding: 1rem;
+}
+
+.footer h1,
+.footer p {
+  padding: 1rem;
+}
+
+.footer .footer-paragrap {
+  background-color: rgba(128, 128, 128, 0.452);
+  border-radius: 25px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.footer .footer-paragrap:hover {
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.footer .footer-closing {
+  background-color: #19161b;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  text-align: right;
+  font-size: 12px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,83 @@
+$myColor: rgba(250, 128, 114, 0.911);
+$primaryColor: rgb(0, 0, 0);
+$secondaryColor: rgba(128, 128, 128, 0.452);
+$closingColor: #19161b;
+
+header {
+  background-color: $myColor;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  color: $primaryColor;
+  font-size: 2vw;
+}
+
+.main {
+  background-color: $secondaryColor;
+
+  .container & {
+    background-color: yellow;
+  }
+  .main-heading {
+    font-size: 2rem;
+    padding: 15px;
+
+    h1 {
+      padding: 1rem;
+    }
+    .main-paragraf {
+      background-color: rgba(128, 128, 128, 0.37);
+      padding: 0.5rem;
+      border-radius: 25px;
+      margin-bottom: 1rem;
+      transition: 0.2s ease-in;
+
+      &:hover {
+        border-radius: 6px;
+        padding: 1rem;
+      }
+    }
+
+    p {
+      color: black;
+    }
+  }
+}
+
+.footer {
+  // #{&} sama saja dengan & &-class
+  #{&}-heading {
+    background-color: $secondaryColor;
+    padding: 1rem;
+  }
+  h1,
+  p {
+    padding: 1rem;
+  }
+
+  & &-paragrap {
+    background-color: $secondaryColor;
+    border-radius: 25px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in;
+    &:hover {
+      border-radius: 6px;
+      padding: 1rem;
+    }
+  }
+
+  & &-closing {
+    background-color: $closingColor;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    text-align: right;
+    font-size: 12px;
+  }
+}
