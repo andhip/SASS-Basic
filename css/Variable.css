@@ -1,0 +1,19 @@
+.main-variable {
+  background-color: #11223e;
+  color: #d1d6d1;
+  padding: 2rem;
+}
+
+.main-variable p {
+  color: #d1d6d1;
+  background-color: #cfcfcf23;
+  padding: 2rem;
+  border-radius: 2px;
+  margin-bottom: 3rem;
+}
+
+p.variable-paragraph {
+  background-color: #d1ab4b94;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=Variable.css.map */

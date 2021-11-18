@@ -1,17 +1,17 @@
 body {
-  background-color: rgba(128, 128, 128, 0.452);
+  background-color: #d1d6d1;
 }
 
 header {
-  background-color: rgba(250, 128, 114, 0.911);
+  background-color: #ecd2bd;
   padding: 50px;
 }
 
 header .main-header {
   font-size: 3rem;
-  opacity: 12%;
+  opacity: 10%;
   font-style: italic;
-  margin-top: -55px;
+  margin-top: -66px;
   letter-spacing: 2px;
   margin-bottom: 2.5rem;
 }
@@ -20,21 +20,25 @@ header .main-subHeader {
   text-decoration: underline;
 }
 
+header h1 {
+  font-size: 5rem;
+  color: #11223e;
+}
+
 h1 {
   font-size: 4rem;
 }
 
 p {
-  color: black;
   font-size: 2vw;
 }
 
 .main {
-  background-color: rgba(128, 128, 128, 0.452);
+  background-color: #ecd2bd;
 }
 
 .container .main {
-  background-color: yellow;
+  background-color: #d1aa4b;
 }
 
 .main .main-heading {
@@ -47,17 +51,17 @@ p {
 }
 
 .main .main-heading .main-paragraf {
-  background-color: rgba(128, 128, 128, 0.37);
-  padding: 0.5rem;
+  background-color: #d1d6d19d;
+  padding: 1rem;
   border-radius: 25px;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
 .main .main-heading .main-paragraf:hover {
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1.2rem;
 }
 
 .main .main-heading p {
@@ -65,9 +69,10 @@ p {
 }
 
 .footer .footer-heading {
-  background-color: rgba(128, 128, 128, 0.452);
+  background-color: #ecd2bd;
   padding: 1rem;
   margin-bottom: 0;
+  color: #11223e;
 }
 
 .footer h1,
@@ -75,22 +80,26 @@ p {
   padding: 1rem;
 }
 
+.footer p {
+  color: #00000e;
+}
+
 .footer .footer-paragrap {
-  background-color: rgba(128, 128, 128, 0.452);
+  background-color: rgba(128, 128, 128, 0.37);
   border-radius: 25px;
   padding: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
 .footer .footer-paragrap:hover {
   border-radius: 10px;
-  padding: 0.5rem;
+  padding: 0.8rem;
 }
 
 .footer .footer-closing {
-  background-color: #19161b;
+  background-color: #11223e;
   color: #fff;
   padding: 1rem;
   border-radius: 4px;
@@ -99,9 +108,8 @@ p {
 }
 
 .footer .footer-closing a {
-  color: #fff;
+  color: #ecd2bd;
   letter-spacing: 0.1px;
-  opacity: 0.75;
   font-size: 1rem;
   text-decoration: none;
   -webkit-transition: 0.25s;
@@ -109,7 +117,6 @@ p {
 }
 
 .footer .footer-closing a:hover {
-  opacity: 1;
-  color: yellow;
+  opacity: 0.85;
 }
 /*# sourceMappingURL=main.css.map */

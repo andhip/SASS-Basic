@@ -1,10 +1,12 @@
-$myColor: rgba(250, 128, 114, 0.911);
-$primaryColor: rgb(0, 0, 0);
-$secondaryColor: rgba(128, 128, 128, 0.452);
-$closingColor: #19161b;
+$myColor: #ecd2bd;
+$primaryColor: #11223e;
+$secondaryColor: #ecd2bd;
+$tertiary-color: #d1aa4b;
+$neutral-color: #d1d6d1;
+$closingColor: hsl(276, 10%, 10%);
 
 body {
-  background-color: $secondaryColor;
+  background-color: $neutral-color;
 }
 header {
   background-color: $myColor;
@@ -12,14 +14,18 @@ header {
 
   .main-header {
     font-size: 3rem;
-    opacity: 12%;
+    opacity: 10%;
     font-style: italic;
-    margin-top: -55px;
+    margin-top: -66px;
     letter-spacing: 2px;
     margin-bottom: 2.5rem;
   }
   .main-subHeader {
     text-decoration: underline;
+  }
+  h1 {
+    font-size: 5rem;
+    color: $primaryColor;
   }
 }
 
@@ -28,7 +34,6 @@ h1 {
 }
 
 p {
-  color: $primaryColor;
   font-size: 2vw;
 }
 
@@ -36,7 +41,7 @@ p {
   background-color: $secondaryColor;
 
   .container & {
-    background-color: yellow;
+    background-color: $tertiary-color;
   }
   .main-heading {
     font-size: 2rem;
@@ -46,15 +51,15 @@ p {
       padding: 1rem;
     }
     .main-paragraf {
-      background-color: rgba(128, 128, 128, 0.37);
-      padding: 0.5rem;
+      background-color: #d1d6d19d;
+      padding: 1rem;
       border-radius: 25px;
-      margin-bottom: 1rem;
+      margin-bottom: 3rem;
       transition: 0.2s ease-in;
 
       &:hover {
         border-radius: 10px;
-        padding: 1.5rem;
+        padding: 1.2rem;
       }
     }
 
@@ -70,26 +75,30 @@ p {
     background-color: $secondaryColor;
     padding: 1rem;
     margin-bottom: 0;
+    color: #11223e;
   }
   h1,
   p {
     padding: 1rem;
   }
+  p {
+    color: #00000e;
+  }
 
   & &-paragrap {
-    background-color: $secondaryColor;
+    background-color: rgba(128, 128, 128, 0.37);
     border-radius: 25px;
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     transition: all 0.3s ease-in;
     &:hover {
       border-radius: 10px;
-      padding: 0.5rem;
+      padding: 0.8rem;
     }
   }
 
   & &-closing {
-    background-color: $closingColor;
+    background-color: $primaryColor;
     color: #fff;
     padding: 1rem;
     border-radius: 4px;
@@ -97,16 +106,14 @@ p {
     font-size: 12px;
 
     a {
-      color: #fff;
+      color: $myColor;
       letter-spacing: 0.1px;
-      opacity: 0.75;
       font-size: 1rem;
       text-decoration: none;
       transition: 0.25s;
 
       &:hover {
-        opacity: 1;
-        color: yellow;
+        opacity: 0.85;
       }
     }
   }

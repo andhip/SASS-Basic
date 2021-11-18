@@ -1,0 +1,51 @@
+// CSS Variable
+// all acsess
+
+// :root {
+//   --primary-color: rgb(193, 119, 236);
+//   --secondary-color: #242424;
+//   --text-color: black;
+// }
+
+// .main-variable {
+//   background-color: var(--primary-color);
+// }
+
+// h1 {
+//   color: var(--text-color);
+// }
+
+// ===============================
+// SASS Variable
+// ===============================
+$primary-color: #11223e;
+$secondary-color: #ecd2bd;
+$tertiary-color: #d1aa4b;
+$neutral-color: #d1d6d1;
+$text-color: #00000e;
+
+.main-variable {
+  background-color: $primary-color;
+  color: $neutral-color;
+  padding: 2rem;
+
+  p {
+    color: $neutral-color;
+    background-color: #cfcfcf23;
+    padding: 2rem;
+    border-radius: 2px;
+    margin-bottom: 3rem;
+  }
+}
+
+// MAP
+$alert: (
+  "danger": red,
+  "success": green,
+  "warning": #d1ab4b94,
+);
+
+p.variable-paragraph {
+  background-color: map-get($alert, "warning");
+  border-radius: 3px;
+}
