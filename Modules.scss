@@ -1,4 +1,8 @@
-@import "css/modules/mixin";
-@import "css/modules/header";
-@import "css/modules/main";
-@import "css/modules/footer";
+// @import "css/modules/mixin";
+// @import "css/modules/header";
+// @import "css/modules/main";
+// @import "css/modules/footer";
+
+@use "css/modules/header";
+@use "css/modules/main";
+@use "css/modules/footer";

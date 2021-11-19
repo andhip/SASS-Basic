@@ -32,3 +32,9 @@ $text-color: #00000e;
     }
   }
 }
+@mixin flex-box($direction: row, $space: center) {
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+  flex-direction: $direction;
+}

@@ -1,18 +1,18 @@
-.prefooter ul {
-  @include inline-list();
-  @include style-list2();
-}
+@use "mixin" as m;
 
-// Arguments in MIXIN
-@mixin flex-box($direction: row, $space: center) {
-  display: flex;
-  justify-content: $space;
-  align-items: center;
-  flex-direction: $direction;
+$primary-color: #11223e;
+$secondary-color: #ecd2bd;
+$tertiary-color: #d1aa4b;
+$neutral-color: #d1d6d1;
+$text-color: #00000e;
+
+.prefooter ul {
+  @include m.inline-list();
+  @include m.style-list2();
 }
 
 .container {
-  @include flex-box(row-reverse, space-evenly);
+  @include m.flex-box(row-reverse, space-evenly);
   width: 450px;
   height: 400px;
   border-radius: 16px;
