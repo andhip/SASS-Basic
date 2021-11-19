@@ -33,6 +33,12 @@ $text-color: #00000e;
   }
 }
 
+.header {
+  background: $tertiary-color;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
 .header ul {
   @include inline-list();
 
