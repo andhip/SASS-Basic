@@ -8,6 +8,29 @@ $closingColor: hsl(276, 10%, 10%);
 body {
   background-color: $neutral-color;
 }
+
+nav {
+  position: relative;
+  float: right;
+
+  ul,
+  li {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    color: $primaryColor;
+
+    &:hover {
+      text-decoration: line-through;
+    }
+  }
+}
+
 header {
   background-color: $myColor;
   padding: 50px;
@@ -25,6 +48,7 @@ header {
   }
   h1 {
     font-size: 5rem;
+    margin-top: 5rem;
     color: $primaryColor;
   }
 }

@@ -1,0 +1,90 @@
+$primary-color: #11223e;
+$secondary-color: #ecd2bd;
+$tertiary-color: #d1aa4b;
+$neutral-color: #d1d6d1;
+$text-color: #00000e;
+
+@mixin inline-list {
+  margin: 0;
+  padding: 1rem;
+  list-style: none;
+  li {
+    display: inline-block;
+  }
+}
+@mixin style-list {
+  li {
+    background-color: $primary-color;
+    padding: 0.8em 1em 0.8em 1em;
+    border-radius: 25px;
+    a {
+      color: $neutral-color;
+    }
+  }
+}
+@mixin style-list2 {
+  li {
+    background-color: $tertiary-color;
+    padding: 0.8em 1em 0.8em 1em;
+    border-radius: 25px;
+    a {
+      color: $primary-color;
+    }
+  }
+}
+
+.header ul {
+  @include inline-list();
+
+  li {
+    background-color: $primary-color;
+    padding: 0.8em 1em 0.8em 1em;
+    border-radius: 25px;
+    a {
+      color: $neutral-color;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.main ul {
+  list-style: none;
+  li {
+    padding: 8px;
+  }
+}
+
+.prefooter ul {
+  @include inline-list();
+  @include style-list2();
+}
+
+// Arguments in MIXIN
+@mixin flex-box($direction: row, $space: center) {
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+.container {
+  @include flex-box(row-reverse, space-evenly);
+  width: 450px;
+  height: 400px;
+  border-radius: 16px;
+  background-color: $primary-color;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  .box {
+    background-color: $tertiary-color;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    &:hover {
+      background-color: $neutral-color;
+      cursor: pointer;
+    }
+  }
+}

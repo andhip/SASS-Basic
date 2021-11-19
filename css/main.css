@@ -2,6 +2,30 @@ body {
   background-color: #d1d6d1;
 }
 
+nav {
+  position: relative;
+  float: right;
+}
+
+nav ul,
+nav li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  color: #11223e;
+}
+
+nav a:hover {
+  text-decoration: line-through;
+}
+
 header {
   background-color: #ecd2bd;
   padding: 50px;
@@ -22,6 +46,7 @@ header .main-subHeader {
 
 header h1 {
   font-size: 5rem;
+  margin-top: 5rem;
   color: #11223e;
 }
 
