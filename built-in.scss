@@ -1,0 +1,27 @@
+// Base
+$warna-dasar: salmon;
+h1 {
+  color: $warna-dasar;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 6rem;
+}
+hr {
+  width: 250px;
+  height: 0.5em;
+  text-align: center;
+  background-color: adjust-color($warna-dasar, $blue: 250);
+}
+// Built-in Modules: Color
+// Adjust-color() ===<>===
+
+// h1 {
+//   color: adjust-color($color: $warna-dasar, $green: 100, $blue: 200, $red: -50);
+// }
+
+// Adjust-hue() ===<>===
+h1 {
+  color: adjust-hue($warna-dasar, -30deg);
+  //   color wheels rotated 30deg
+}
