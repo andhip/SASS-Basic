@@ -2,6 +2,7 @@
   background: #d1aa4b;
   padding: 1rem;
   border-radius: 12px;
+  margin-top: 2rem;
 }
 
 .header ul {
@@ -24,28 +25,66 @@
   text-decoration: none;
 }
 
+body {
+  background-color: #d1d6d1;
+}
+
+nav {
+  position: relative;
+  float: right;
+}
+nav ul,
+nav li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+  color: #11223e;
+}
+nav a:hover {
+  text-decoration: line-through;
+}
+
+h1.title {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+}
+
+header {
+  background-color: #ecd2bd;
+  padding: 50px;
+}
+header .main-header {
+  font-size: 3rem;
+  opacity: 10%;
+  font-style: italic;
+  margin-top: -66px;
+  letter-spacing: 2px;
+  margin-bottom: 2.5rem;
+}
+header .main-subHeader {
+  text-decoration: underline;
+}
+header h1 {
+  font-size: 5rem;
+  margin-top: 5rem;
+  color: #11223e;
+}
+
+.main {
+  background-color: #ecd2bd;
+}
+
 .main ul {
   list-style: none;
 }
 .main ul li {
   padding: 8px;
-}
-
-.prefooter ul {
-  margin: 0;
-  padding: 1rem;
-  list-style: none;
-}
-.prefooter ul li {
-  display: inline-block;
-}
-.prefooter ul li {
-  background-color: #d1aa4b;
-  padding: 0.8em 1em 0.8em 1em;
-  border-radius: 25px;
-}
-.prefooter ul li a {
-  color: #11223e;
 }
 
 .container {
@@ -69,6 +108,67 @@
 .container .box:hover {
   background-color: #d1d6d1;
   cursor: pointer;
+}
+
+.prefooter ul {
+  margin: 0;
+  padding: 1rem;
+  list-style: none;
+}
+.prefooter ul li {
+  display: inline-block;
+}
+.prefooter ul li {
+  background-color: #d1aa4b;
+  padding: 0.8em 1em 0.8em 1em;
+  border-radius: 25px;
+}
+.prefooter ul li a {
+  color: #11223e;
+}
+
+.footer .footer-heading {
+  background-color: #ecd2bd;
+  padding: 1rem;
+  margin-bottom: 0;
+  color: #11223e;
+}
+.footer h1,
+.footer p {
+  padding: 1rem;
+}
+.footer p {
+  color: #00000e;
+  font-size: 1.5rem;
+}
+.footer .footer-paragrap {
+  background-color: rgba(128, 128, 128, 0.37);
+  border-radius: 25px;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease-in;
+}
+.footer .footer-paragrap:hover {
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+.footer .footer-closing {
+  background-color: #11223e;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+}
+.footer .footer-closing a {
+  color: #ecd2bd;
+  letter-spacing: 0.1px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.25s;
+}
+.footer .footer-closing a:hover {
+  opacity: 0.85;
 }
 
 /*# sourceMappingURL=Modules.css.map */

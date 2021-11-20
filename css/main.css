@@ -26,6 +26,12 @@ nav a:hover {
   text-decoration: line-through;
 }
 
+h1.title {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+}
+
 header {
   background-color: #ecd2bd;
   padding: 50px;

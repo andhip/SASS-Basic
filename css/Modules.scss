@@ -1,0 +1,18 @@
+/* Error: There is no module with the namespace "m".
+ *    ,
+ * 11 |   @include m.flex-box(row-reverse, space-evenly);
+ *    |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   css\modules\_main.scss 11:3  @use
+ *   Modules.scss 7:1             root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: There is no module with the namespace "m".\a    \2577 \a 11 \2502    @include m.flex-box(row-reverse, space-evenly);\d\a    \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   css\\modules\\_main.scss 11:3  @use\a   Modules.scss 7:1             root stylesheet';
+}
